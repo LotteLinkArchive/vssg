@@ -1,2 +1,2 @@
 #!/bin/sh
-./vssg.py testproject_in testproject_out
+./vssg.py --clear testproject_in testproject_out

@@ -1,2 +1,9 @@
 [general]
 name = "Test Project"
+
+[files]
+project_page_ext = ".vsp"
+# Output as XHTML
+project_page_out = ".xht"
+# Exclude these file types
+project_page_ex = [".vsm"]
