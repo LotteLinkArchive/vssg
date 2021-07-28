@@ -46,7 +46,8 @@ if __name__ == '__main__':
 		
 		if args.quiet == False or kwargs['force'] == True:
 			targs = list(targs)
-			targs[0] = (f"[\x1b[2m{round(time.time())}\x1b[0m] "
+			targs[0] = (
+				f"[\x1b[2m{str(time.time()).ljust(20, '0')}\x1b[0m] "
 				+ targs[0])
 			del kwargs['force']
 			print(*targs, **kwargs)
